@@ -1,0 +1,25 @@
+/* projectcard.css */
+
+.cardImageWrapper {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 0; /* Remove padding if not needed */
+  }
+  
+  .cardImage {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0.375rem; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow around the image */
+  }
+  
+  .cardTitle {
+    text-align: center; /* Center-align text */
+    color: white; /* Text color */
+  }
+  
+  .cardDescription {
+    color: #e2e8f0; /* Light gray color for description text */
+  }
+  
