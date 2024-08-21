@@ -8,39 +8,55 @@ import '../CSS/Swipper.css';
 import { Heading } from "@chakra-ui/react";
 
 const awards = [
-  { title: "College", src: "../images/College.png" },
-  { title: "ERS", src: "../images/ERS.png" },
-  { title: "State", src: "../images/State.png" },
-  { title: "Texas", src: "../images/Texas.png" },
+  { title: "College", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/College.png" },
+  { title: "ERS", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/ERS.png" },
+  { title: "State", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/State.png" },
+  { title: "Texas", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/Texas.png" },
 ];
 
+const coursera = [
+  { title: "13", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/COURSERA13.png" },
+  { title: "12", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/COURSERA12.png" },
+  { title: "11", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/COURSERA11.png" },
+  { title: "10", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/COURSERA10.png" },
+  { title: "9", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/COURSERA9.png" },
+  { title: "8", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/COURSERA8.png" },
+  { title: "7", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/COURSERA7.png" },
+  { title: "6", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/COURSERA6.png" },
+  { title: "5", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/COURSERA5.png" },
+  { title: "4", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/COURSERA4.png" },
+  { title: "3", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/COURSERA3.png" },
+  { title: "2", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/COURSERA2.png" },
+  { title: "1", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/COURSERA1.png" },
+]
+
 const sports = [
-  { title: "26", src: "../images/26.png" },
-  { title: "25", src: "../images/25.png" },
-  { title: "24", src: "../images/24.png" },
-  { title: "23", src: "../images/23.png" },
-  { title: "22", src: "../images/22.png" },
-  { title: "21", src: "../images/21.png" },
-  { title: "20", src: "../images/20.png" },
-  { title: "19", src: "../images/19.png" },
-  { title: "18", src: "../images/18.png" },
-  { title: "17", src: "../images/17.png" },
-  { title: "16", src: "../images/16.png" },
-  { title: "15", src: "../images/15.png" },
-  { title: "14", src: "../images/14.png" },
-  { title: "13", src: "../images/13.png" },
-  { title: "12", src: "../images/12.png" },
-  { title: "11", src: "../images/11.png" },
-  { title: "10", src: "../images/10.png" },
-  { title: "9", src: "../images/9.png" },
-  { title: "8", src: "../images/8.png" },
-  { title: "7", src: "../images/7.png" },
-  { title: "6", src: "../images/6.png" },
-  { title: "5", src: "../images/5.png" },
-  { title: "4", src: "../images/4.png" },
-  { title: "3", src: "../images/3.png" },
-  { title: "2", src: "../images/2.png" },
-  { title: "1", src: "../images/1.png" },
+  { title: "26", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/26.png" },
+  { title: "25", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/25.png" },
+  { title: "24", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/24.png" },
+  { title: "23", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/23.png" },
+  { title: "22", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/22.png" },
+  { title: "21", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/21.png" },
+  { title: "20", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/20.png" },
+  { title: "19", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/19.png" },
+  { title: "18", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/18.png" },
+  { title: "17", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/17.png" },
+  { title: "16", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/16.png" },
+  { title: "15", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/15.png" },
+  { title: "14", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/14.png" },
+  { title: "13", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/13.png" },
+  { title: "12", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/12.png" },
+  { title: "11", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/11.png" },
+  { title: "10", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/10.png" },
+  { title: "9", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/9.png" },
+  { title: "8", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/8.png" },
+  { title: "7", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/7.png" },
+  { title: "6", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/6.png" },
+  { title: "5", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/5.png" },
+  { title: "4", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/4.png" },
+  { title: "3", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/3.png" },
+  { title: "2", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/2.png" },
+  { title: "1", src: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/1.png" },
 ];
 
 const ImageSlider = () => {
@@ -60,6 +76,8 @@ const ImageSlider = () => {
       </Heading>
       <Heading color="white">Awads</Heading>
       <Swiper_ awards={awards} />
+      <Heading color="white">Course Certificates</Heading>
+      <Swiper_ awards={coursera} />
       <Heading color="white">Sports and Co-curricular Activities</Heading>
       <Swiper_ awards={sports} />
 

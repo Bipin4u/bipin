@@ -6,7 +6,7 @@ import { Box, HStack, Link, IconButton, useDisclosure, VStack, useBreakpointValu
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 const socials = [
-  { icon: faEnvelope, url: "mailto:bipinkumar9739340018@gmail.com" },
+  { icon: faEnvelope, url: "mailto:bipin.kumar.pros@gmail.com" },
   { icon: faGithub, url: "https://github.com/bipin4u/" },
   { icon: faLinkedin, url: "https://www.linkedin.com/in/bipin-kumar-2449a71b9/" }
 ];
@@ -93,30 +93,6 @@ const Header = () => {
             <Link onClick={downloadResume} _hover={{ textDecoration: 'underline' }}>Resume</Link>
           </HStack>
         </HStack>
-
-        {/* Mobile Menu */}
-        {isMobile && isOpen && (
-          <VStack
-            spacing={4}
-            align="center"
-            mt={4}
-            p={4}
-            bg="#18181b"
-            borderRadius="md"
-            boxShadow="md"
-            display={{ base: isOpen ? 'flex' : 'none' }}
-          >
-            {socials.map((social, index) => (
-              <Link key={index} href={social.url} isExternal>
-                <FontAwesomeIcon icon={social.icon} size="2x" />
-              </Link>
-            ))}
-            <Link onClick={() => handleClick('projects')} _hover={{ textDecoration: 'underline' }}>Projects</Link>
-            <Link onClick={() => handleClick('contactme')} _hover={{ textDecoration: 'underline' }}>Contact</Link>
-            <Link onClick={() => handleClick('skills')} _hover={{ textDecoration: 'underline' }}>Skills</Link>
-            <Link onClick={downloadResume} _hover={{ textDecoration: 'underline' }}>Resume</Link>
-          </VStack>
-        )}
       </Box>
     </Box>
   );

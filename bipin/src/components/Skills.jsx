@@ -6,35 +6,35 @@ import Skillcard from "./Skillcard";
 const myskill = [
   {
     title: "Python",
-    getImageSrc: "../images/python.png",
+    getImageSrc: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/python.png",
   },
   {
     title: "React",
-    getImageSrc: "../images/React.png",
+    getImageSrc: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/React.png",
   },
   {
     title: "HTML",
-    getImageSrc: "../images/HTML.png",
+    getImageSrc: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/HTML.png",
   },
   {
     title: "CSS",
-    getImageSrc: "../images/CSS.png",
+    getImageSrc: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/CSS.png",
   },
   {
     title: "JavaScript",
-    getImageSrc: "../images/JS.png",
+    getImageSrc: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/JS.png",
   },
   {
     title: "C++",
-    getImageSrc: "../images/C++.png",
+    getImageSrc: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/C%2B%2B.png",
   },
   {
     title: "SQL",
-    getImageSrc: "../images/SQL.png",
+    getImageSrc: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/SQL.png",
   },
   {
     title: "GIT",
-    getImageSrc: "../images/GIT.png",
+    getImageSrc: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/GIT.png",
   },
 ];
 

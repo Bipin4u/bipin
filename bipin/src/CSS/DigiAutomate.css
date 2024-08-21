@@ -1,0 +1,70 @@
+.digi-automate-container {
+    background-color: #1e3a5f; /* Darker blue for a better background */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 80px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .code-section, .explanation-section {
+    background-color: #2d4f75; /* Medium blue for a clean look */
+    border: 1px solid #ccc; /* Softer border */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  }
+  
+  .code-section h2, .explanation-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #f7fafc; /* Soft off-white for headings */
+    border-bottom: 2px solid #3e638a; /* Subtle blue underline */
+    padding-bottom: 10px;
+  }
+  
+  .code-section {
+    background-color: #243b55; /* Dark blue for code background */
+    color: #e2e8f0; /* Light grey for code text */
+  }
+  
+  .code-section pre {
+    background-color: #1e2e46; /* Darker blue for code block */
+    color: #cbd5e1; /* Softer light grey for text */
+    font-size: 0.9em;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    max-height: 85vh;
+  }
+  
+  .explanation-content {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #e2e8f0; /* Light grey for body text */
+  }
+  
+  .explanation-content p {
+    margin-bottom: 15px;
+  }
+  
+  .explanation-content strong {
+    color: #63b3ed; /* Light blue for emphasized text */
+  }
+  
+  @media (min-width: 768px) {
+    .digi-automate-container {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .code-section, .explanation-section {
+      width: 48%;
+    }
+  }
+  
+  .code-section h2 {
+    color: #f7fafc; /* Keep heading color consistent */
+  }
+  

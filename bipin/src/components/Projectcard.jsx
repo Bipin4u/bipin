@@ -1,8 +1,9 @@
 import React from "react";
 import { Card, CardBody, Stack, Heading, Divider, Text } from "@chakra-ui/react";
 import '../CSS/Projectcard.css'; // Your custom styles
+import { Link } from "react-router-dom";
 
-const Projectcard = ({ title, description, imageSrc }) => {
+const Projectcard = ({ title, description, imageSrc , path}) => {
   return (
     <Card
       maxW="100%" // Full width for responsiveness
@@ -21,6 +22,7 @@ const Projectcard = ({ title, description, imageSrc }) => {
         boxShadow: "xl", // Increase shadow intensity on hover
       }}
     >
+      <Link to= {path} >
       <CardBody p={0}> {/* Remove padding around the image */}
         <img 
           src={imageSrc}
@@ -42,6 +44,7 @@ const Projectcard = ({ title, description, imageSrc }) => {
           </Text>      
         </Stack>
       </CardBody>
+      </Link>
       <Divider borderColor="gray.600" />
     </Card>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import { Avatar, Heading, VStack, Text, Box } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
-import image from "../images/Bipin.jpg"; // Ensure the image path is correct
+
 
 const LandingSection = () => (
   <FullScreenSection
@@ -15,7 +15,7 @@ const LandingSection = () => (
       <Avatar
         size={{ base: "xl", md: "2xl" }} // Responsive size
         name="Bipin Kumar"
-        src={image}
+        src='https://myresumeimage.s3.ap-south-1.amazonaws.com/images/Bipin.jpg'
         borderWidth="4px"
         borderColor="black"
         boxShadow="0 4px 8px rgba(0, 0, 0, 0.3)"
