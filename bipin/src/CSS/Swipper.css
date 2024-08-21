@@ -1,7 +1,7 @@
 /* Container for the main section */
 .slider_image {
     background-color: #2a4365;
-    padding: 60px 20px; /* Extra padding for better spacing */
+    padding:  20px; /* Extra padding for better spacing */
     height: fit-content; /* Full viewport height */
     display: flex;
     flex-direction: column;
@@ -80,6 +80,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Shadow for     the image */
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
+    
     .mySwiper {
         max-width: 100%; /* Make the slider full-width on small screens */
     }

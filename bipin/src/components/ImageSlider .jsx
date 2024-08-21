@@ -74,11 +74,38 @@ const ImageSlider = () => {
       >
         Achievements
       </Heading>
-      <Heading color="white">Awads</Heading>
+            <Heading
+        as="h1"
+        id="achievement-section"
+        fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}
+        color="white"
+        mb={1}
+        textAlign="center"
+        mx="auto"
+        my={2}
+      >Awads</Heading>
       <Swiper_ awards={awards} />
-      <Heading color="white">Course Certificates</Heading>
+            <Heading
+        as="h1"
+        id="achievement-section"
+        fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}
+        color="white"
+        mb={1}
+        textAlign="center"
+        mx="auto"
+        my={2}
+      >Course Certificates</Heading>
       <Swiper_ awards={coursera} />
-      <Heading color="white">Sports and Co-curricular Activities</Heading>
+            <Heading
+        as="h1"
+        id="achievement-section"
+        fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}
+        color="white"
+        mb={1}
+        textAlign="center"
+        mx="auto"
+        my={2}
+      >Sports and Co-curricular Activities</Heading>
       <Swiper_ awards={sports} />
 
     </main>

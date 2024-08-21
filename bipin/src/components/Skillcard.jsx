@@ -4,13 +4,12 @@ import { Card, CardBody, Stack, Heading, Divider, Center } from "@chakra-ui/reac
 const Skillcard = ({ title, imageSrc }) => {
   return (
     <Card
-      maxW={{ base: "90%", sm: "80%", md: "60%" }} // Responsive width
+      maxW="100%" // Full width for better alignment in grid
       overflow="hidden"
       boxShadow="lg" // Enhanced shadow
       borderRadius="lg" // More rounded corners
       display="flex"
       flexDirection="column"
-      height="100%" // Ensure cards take full height of their grid cell
       justifyContent="center" // Center horizontally
       alignItems="center" // Center vertically
       bg="gray.800" // Background color
@@ -21,7 +20,7 @@ const Skillcard = ({ title, imageSrc }) => {
         boxShadow: "xl", // Increase shadow intensity on hover
       }}
     >
-      <CardBody p={0}> {/* Remove padding around the image */}
+      <CardBody p={0}>
         <Center>
           <img
             src={imageSrc}
@@ -29,14 +28,14 @@ const Skillcard = ({ title, imageSrc }) => {
             style={{
               maxWidth: '100%',
               height: 'auto',
-              borderRadius: 'md', // Rounded corners for the image
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Subtle shadow around the image
-              transition: 'transform 0.3s ease-in-out', // Smooth transition for image hover effect
+              borderRadius: 'md',
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+              transition: 'transform 0.3s ease-in-out',
             }}
           />
         </Center>
-        <Stack mt='4' spacing='3' align="center">
-          <Heading size='md' color="white">
+        <Stack mt={4} spacing={3} align="center">
+          <Heading size="md" color="white">
             {title}
           </Heading>
         </Stack>

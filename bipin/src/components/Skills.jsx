@@ -47,28 +47,28 @@ const Skills = () => {
       padding={{ base: 4, md: 6 }} // Responsive padding
       spacing={8} // Adjust spacing
     >
-
       <Heading
         as="h1"
-        id="skills-section" fontSize={{ base: "2xl", md: "4xl", lg: "5xl" }} color="white"
+        id="skills-section"
+        fontSize={{ base: "2xl", md: "4xl", lg: "5xl" }}
+        color="white"
+        textAlign="center"
       >
-      Skills
+        Skills
       </Heading>
       <Box
-      marginLeft='7%'
-      marginTop="5%"
-       justifyContent="center" // Centers the grid items horizontally
-       alignItems="center" // Centers the grid items vertically
+        margin="0 auto"
+        marginTop={{ base: "5%", md: "5%" }}
         display="grid"
-        gridTemplateColumns={{ base: "repeat(2, 1fr)", sm: "repeat(3, 1fr)", md: "repeat(4, 1fr)" }} // Responsive grid
-        
-        // gap={{ base: 4, md: 6 }} // Responsive gap
-        gridRowGap="10%"
-        width="100%"
-        height="30%px"
-        
+        gridTemplateColumns={{
+          base: "repeat(2, 1fr)",  // 2 items per row on mobile
+          sm: "repeat(3, 1fr)",    // 3 items per row on small screens
+          md: "repeat(4, 1fr)",    // 4 items per row on medium and up
+        }}
+        gap={{ base: 4, md: 6 }} // Responsive gap
+        width="90%" // Full width with small margin
       >
-        {myskill.map((skill, index) => (
+        {myskill.map((skill) => (
           <Skillcard
             key={skill.title}
             title={skill.title}

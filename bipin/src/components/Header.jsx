@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { Box, HStack, Link, IconButton, useDisclosure, VStack, useBreakpointValue } from "@chakra-ui/react";
+import { Box, HStack, Link, IconButton, useDisclosure, VStack, useBreakpointValue, Divider } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 const socials = [
@@ -74,22 +74,38 @@ const Header = () => {
               onClick={onToggle}
               variant="outline"
               color="white"
+              size="lg"
             />
           )}
 
           {/* Navigation Links */}
           <HStack
-            spacing={4}
+            
             display={{ base: isOpen ? 'flex' : 'none', md: 'flex' }}
             flexDirection={{ base: 'column', md: 'row' }}
             align="center"
+            bg={{ base: 'gray.800', md: 'transparent' }}
+            p={{ base: 4, md: 0 }}
+            position={{ base: 'absolute', md: 'static' }}
+            top={{ base: '100%', md: 'auto' }}
+            left={0}
+            right={0}
+            zIndex={1}
+            boxShadow={{ base: isOpen ? 'md' : 'none', md: 'none' }}
+            spacing={{ base: 6, md: 4 }}
           >
+            <VStack spacing={4} align="flex-start" display={{ base: 'flex', md: 'none' }}>
+              {socials.map((social, index) => (
+                <Link key={index} href={social.url} isExternal>
+                  <FontAwesomeIcon icon={social.icon} size="2x" />
+                </Link>
+              ))}
+            </VStack>
+
             <Link onClick={() => handleClick('projects')} _hover={{ textDecoration: 'underline' }}>Projects</Link>
             <Link onClick={() => handleClick('skills')} _hover={{ textDecoration: 'underline' }}>Skills</Link>
             <Link onClick={() => handleClick('achievement')} _hover={{ textDecoration: 'underline' }}>Achievements</Link>
             <Link onClick={() => handleClick('contactme')} _hover={{ textDecoration: 'underline' }}>Contact</Link>
-
-
             <Link onClick={downloadResume} _hover={{ textDecoration: 'underline' }}>Resume</Link>
           </HStack>
         </HStack>
