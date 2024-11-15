@@ -6,6 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-cube';
 import { Navigation, Pagination, EffectCube } from 'swiper/modules';
 import '../CSS/Swipper.css';
+import { motion } from "framer-motion";
 
 function Swiper_({ awards }) {
   return (

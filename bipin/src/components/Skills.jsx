@@ -43,9 +43,9 @@ const Skills = () => {
     <FullScreenSection
       backgroundColor="#2A4365"
       isDarkBackground
-      alignItems="center" // Center items horizontally
-      padding={{ base: 4, md: 6 }} // Responsive padding
-      spacing={8} // Adjust spacing
+      alignItems="center"
+      padding={{ base: 4, md: 6 }}
+      spacing={8}
     >
       <Heading
         as="h1"
@@ -61,18 +61,19 @@ const Skills = () => {
         marginTop={{ base: "5%", md: "5%" }}
         display="grid"
         gridTemplateColumns={{
-          base: "repeat(2, 1fr)",  // 2 items per row on mobile
-          sm: "repeat(3, 1fr)",    // 3 items per row on small screens
-          md: "repeat(4, 1fr)",    // 4 items per row on medium and up
+          base: "repeat(2, 1fr)", 
+          sm: "repeat(3, 1fr)",    
+          md: "repeat(4, 1fr)",    
         }}
-        gap={{ base: 4, md: 6 }} // Responsive gap
-        width="90%" // Full width with small margin
+        gap={{ base: 4, md: 6 }}
+        width="90%"
       >
-        {myskill.map((skill) => (
+        {myskill.map((skill, index) => (
           <Skillcard
             key={skill.title}
             title={skill.title}
             imageSrc={skill.getImageSrc}
+            isLeft={index % 2 === 0} // Alternate between left and right
           />
         ))}
       </Box>
