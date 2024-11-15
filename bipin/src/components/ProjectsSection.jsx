@@ -21,15 +21,15 @@ const projects = [
   {
     title: "Test script generation with python",
     description:
-      "Developed a Python-based tool in a Jupyter Notebook environment that automates test case script generation for Android TV by analyzing getlogcat logs, extracting remote control keywords, and calculating time differences between operations. Integrated with Akira and DigiTV Automate ",    
+      "Designed Python-based tool in a Jupyter Notebook environment that automates test case script generation for Android TV by parsing raw data from files/streams and extracted machine generated logs. Integrated with Akira and DigiTV Automate",    
     getImageSrc: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/photo3.jpg",
     path: "/"
   },
   {
-    title: "TextForms | React.js",
+    title: "Full-Stack E-commerce Website (React, Django)",
     description:
-      "The Textform performs uniquely flexible capabilities for processing textual data.",
-    getImageSrc: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/textform.png",
+      "Integrated robust user authentication and authorization mechanisms, along with protected routing to ensure secure access. Implemented dynamic shopping cart ,wish list functionality and seamless order placement processes. Enhanced performance through features like pagination,search.",
+      getImageSrc: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/textform.png",
     path: "/"
   },
 ];

@@ -1,9 +1,16 @@
 import React, { useEffect } from "react";
-import { Card, CardBody, Stack, Heading, Divider, Text } from "@chakra-ui/react";
+import {
+  Card,
+  CardBody,
+  Stack,
+  Heading,
+  Divider,
+  Text,
+} from "@chakra-ui/react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
-import '../CSS/Projectcard.css'; // Your custom styles
+import "../CSS/Projectcard.css"; // Your custom styles
 
 const MotionCard = motion(Card);
 
@@ -61,7 +68,9 @@ const Projectcard = ({ title, description, imageSrc, path, isLeft }) => {
             <Heading size="md" color="white">
               {title}
             </Heading>
-            <Text color="gray.300">{description}</Text>
+            <Text style={{ textAlign: "justify" }} color="gray.300">
+              {description}
+            </Text>
           </Stack>
         </CardBody>
       </Link>
