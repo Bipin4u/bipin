@@ -28,7 +28,7 @@ const LandingSection = () => (
       <MotionAvatar
         size={{ base: "xl", md: "2xl" }}
         name="Bipin Kumar"
-        src="https://myresumeimage.s3.ap-south-1.amazonaws.com/images/Bipin.jpg"
+        src="https://myresumeimage.s3.ap-south-1.amazonaws.com/images/bipin.jpg"
         borderWidth="4px"
         borderColor="black"
         boxShadow="0 4px 8px rgba(0, 0, 0, 0.3)"
