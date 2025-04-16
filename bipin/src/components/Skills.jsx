@@ -65,8 +65,9 @@ const Skills = () => {
           sm: "repeat(3, 1fr)",    
           md: "repeat(4, 1fr)",    
         }}
-        gap={{ base: 4, md: 6 }}
-        width="90%"
+        columnGap={{ base: 6, md: 12 }} // horizontal space between columns
+        rowGap={{ base: 4, md: 8 }}     // vertical space between rows (optional)
+        width="80%"
       >
         {myskill.map((skill, index) => (
           <Skillcard

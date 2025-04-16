@@ -59,9 +59,7 @@
       align-items: flex-start;
     }
   
-    .code-section, .explanation-section {
-      width: 48%;
-    }
+
   }
   
   .code-section h2 {

@@ -36,19 +36,20 @@ const Projectcard = ({ title, description, imageSrc, path, isLeft }) => {
       initial={{ opacity: 0, x: isLeft ? -50 : 50 }} // Animate from left or right
       animate={controls}
       maxW="100%"
-      minW={{ base: "100%", sm: "90%", md: "80%" }}
       overflow="hidden"
-      boxShadow="lg"
+      boxShadow="0 4px 6px -1px rgba(0, 0, 0, 0.1)"
       borderRadius="lg"
       display="flex"
       flexDirection="column"
-      height="100%"
+      justifyContent="center"
+      alignItems="center"
       bg="gray.800"
       p={4}
-      transition="transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+      transition="transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease"
       _hover={{
-        transform: "scale(1.05)",
-        boxShadow: "xl",
+        transform: "scale(1.1)", // More zoom effect on hover
+        boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.3)", // Stronger shadow on hover
+        bg: "gray.700", // Lighter background on hover
       }}
     >
       <Link to={path}>
@@ -58,23 +59,27 @@ const Projectcard = ({ title, description, imageSrc, path, isLeft }) => {
             alt={title}
             style={{
               width: "100%",
-              height: "auto",
+              height: "70%",
               borderRadius: "lg",
               boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
               transition: "transform 0.3s ease-in-out",
             }}
           />
           <Stack mt="4" spacing="3">
-            <Heading size="md" color="white">
+            <Heading
+              fontSize={{ base: "md", sm: "lg", md: "xl", lg: "2xl" }}
+              color="white"
+            >
               {title}
             </Heading>
-            <Text style={{ textAlign: "justify" }} color="gray.300">
+
+            {/* <Text style={{ textAlign: "justify" }} color="gray.300">
               {description}
-            </Text>
+            </Text> */}
           </Stack>
         </CardBody>
       </Link>
-      <Divider borderColor="gray.600" />
+      {/* <Divider borderColor="gray.600" /> */}
     </MotionCard>
   );
 };

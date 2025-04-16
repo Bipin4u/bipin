@@ -24,20 +24,21 @@ const Skillcard = ({ title, imageSrc }) => {
       style={{ width: "100%" }} // Full width for better alignment in grid
     >
       <Card
-        maxW="100%" // Full width for better alignment in grid
+        maxW="100%"
         overflow="hidden"
-        boxShadow="lg" // Enhanced shadow
-        borderRadius="lg" // More rounded corners
+        boxShadow="0 4px 6px -1px rgba(0, 0, 0, 0.1)"
+        borderRadius="lg"
         display="flex"
         flexDirection="column"
-        justifyContent="center" // Center horizontally
-        alignItems="center" // Center vertically
-        bg="gray.800" // Background color
-        p={4} // Padding around the content
-        transition="transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out" // Smooth transition for hover effects
+        justifyContent="center"
+        alignItems="center"
+        bg="gray.800"
+        p={4}
+        transition="transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease"
         _hover={{
-          transform: "scale(1.05)", // Slightly enlarge the card on hover
-          boxShadow: "xl", // Increase shadow intensity on hover
+          transform: "scale(1.1)", // More zoom effect on hover
+          boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.3)", // Stronger shadow on hover
+          bg: "gray.700", // Lighter background on hover
         }}
       >
         <CardBody p={0}>
@@ -46,12 +47,14 @@ const Skillcard = ({ title, imageSrc }) => {
               src={imageSrc}
               alt={title}
               style={{
-                maxWidth: '100%',
-                height: 'auto',
-                borderRadius: 'md',
-                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-                transition: 'transform 0.3s ease-in-out',
+                maxWidth: "80%",
+                height: "auto",
+                borderRadius: "md",
+                boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+                transition: "transform 0.3s ease-in-out",
               }}
+              onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+              onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
             />
           </Center>
           <Stack mt={4} spacing={3} align="center">

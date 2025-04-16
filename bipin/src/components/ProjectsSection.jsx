@@ -5,6 +5,13 @@ import Projectcard from "./Projectcard";
 
 const projects = [
   {
+    title: "Full-Stack E-commerce Website (React, Django)",
+    description:
+      "Integrated robust user authentication and authorization mechanisms, along with protected routing to ensure secure access. Implemented dynamic shopping cart ,wish list functionality and seamless order placement processes. Enhanced performance through features like pagination,search.",
+      getImageSrc: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/e.png",
+    path: "http://65.0.99.250:3000/"
+  },
+  {
     title: "Akira Clone (Stability Automation | DTV)",
     description:
       "Developed Python-based automation script integrating video recording with motion detection, real-time Android log collection via ADB, automated ATSC application control using pywinauto. Employed multi-threading to handle concurrent tasks such as video capture, log monitoring, remote control input simulation, XML file modifications, automated stream selection and directory creation. ",   
@@ -25,13 +32,7 @@ const projects = [
     getImageSrc: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/photo3.jpg",
     path: "/"
   },
-  {
-    title: "Full-Stack E-commerce Website (React, Django)",
-    description:
-      "Integrated robust user authentication and authorization mechanisms, along with protected routing to ensure secure access. Implemented dynamic shopping cart ,wish list functionality and seamless order placement processes. Enhanced performance through features like pagination,search.",
-      getImageSrc: "https://myresumeimage.s3.ap-south-1.amazonaws.com/images/textform.png",
-    path: "/"
-  },
+
 ];
 
 const ProjectsSection = () => {
@@ -52,10 +53,11 @@ const ProjectsSection = () => {
       </Heading>
       <Box
         display="grid"
-        gridTemplateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }} // Responsive grid
-        gap={{ base: 4, md: 6 }} // Responsive gap
+        gridTemplateColumns={{ base: "1fr", md: "repeat(2, 2fr)" }} // Responsive grid
+        columnGap={{ base: 16, md: 24 }} // 64px to 96px horizontal gap
+        rowGap={{ base: 6, md: 10 }}    // 48px to 80px vertical gap
         width="100%" // Ensure grid takes full width
-        padding={{ base: 4, md: 6 }} // Add padding around the grid
+        padding={{ base: 5, md: 12 }} // Add padding around the grid
       >
         {projects.map((project, index) => (
           <Projectcard

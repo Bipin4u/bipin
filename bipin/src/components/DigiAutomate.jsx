@@ -272,12 +272,12 @@ def channelOperation(key):
 
   return (
     <div className="digi-automate-container">
-      <div className="code-section">
+      {/* <div className="code-section">
         <h2>DigiTVAutomate</h2>
         <SyntaxHighlighter language="python" style={vs2015}>
           {codeString}
         </SyntaxHighlighter>
-      </div>
+      </div> */}
       <div className="explanation-section">
         <h2>Detailed Explanation</h2>
         <div className="explanation-content">
